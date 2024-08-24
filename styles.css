@@ -1,0 +1,260 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background: #f4f4f4;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-header {
+    margin-bottom: 20px;
+}
+
+.profile-header img.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5%;
+    border: 5px solid #e1b9d8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-header img.profile-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.profile-header h1 {
+    margin: 10px 0;
+    font-size: 2.5em;
+    color: #ecf0f1;
+    animation: fadeInScale 3s ease-out;
+}
+
+.profile-header p {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #bdc3c7;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    animation: slideIn 1s ease-out;
+
+}
+
+nav ul li {
+    margin: 0 20px;
+    
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    transform: translateY(-2px);
+    background-color: #6b4e70;
+    opacity: 0.5;
+}
+
+section {
+    padding: 40px 20px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+section#home {
+    background: #ecf0f1;
+    text-align: center;
+}
+
+section#about, section#resume, section#contact {
+    background: #fff;
+}
+
+h2 {
+    margin: 0 0 20px;
+    font-size: 2.5em;
+    color: #2c3e50;
+    animation: fadeInUp 1s ease-out;
+}
+
+h3 {
+    margin: 20px 0;
+    font-size: 1.8em;
+    color: #34495e;
+    animation: fadeInUp 1s ease-out;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 30px;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .container {
+    padding: 0 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    animation: fadeIn 1.5s ease-out;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #3498db;
+}
+
+form button {
+    padding: 12px 20px;
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #3498db;
+}
+
+.download-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 20px;
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.download-button:hover {
+    background-color: #3498db;
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.social-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.social-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #2c3e50;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 16px;
+}
+
+.social-button.email {
+    background-color: #e74c3c;
+}
+
+.social-button.linkedin {
+    background-color: #0077b5;
+}
+
+.social-button.github {
+    background-color: #333;
+}
+
+.social-button:hover {
+    transform: scale(1.1);
+    background-color: #3498db;
+}
